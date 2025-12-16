@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <style>
+        /* CSS Styles - This controls the look of your site */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* Skills list styling */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills-list li {
+            background-color: #e9ecef;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        /* Project styling */
+        .project-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+        }
+
+        .links a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            color: white;
+            background-color: var(--accent-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Luis Daniel Hernandez Moreno</h1>
+        <p>CS Student & Developer | Passionate about Technology</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a student currently studying Computer Science. 
+                I am interested in software development, solving complex problems, and learning new technologies.
+                </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Git/GitHub</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Highlighted Projects</h2>
+            
+            <div class="project-item">
+                <h3>RPS Ultimate Battle Game Development</h3>
+                <p>-Built an AI-driven real-time Rock–Paper–Scissors arena game in Python where players draw their fighter, and a custom
+                    PyTorch CNN classifies the drawing (rock/paper/scissors) using OpenCV/PIL preprocessing.
+                    -Designed a modular enemy AI system with adaptive behaviors based on RPS matchups and cooldown logic.
+                    -Implemented custom projectile physics, collision detection, bounce mechanics, and sprite-based movement inside a
+                    scalable Pygame architecture with separate modules for AI, attacks, image recognition, and arena logic..</p>
+                <a href="#">https://github.com/LuisDHernandezM/RPS-Ultimate-Battle</a>
+            </div>
+
+            <div class="project-item">
+                <h3>“Quick Meal” App Creation and Manager </h3>
+                <p> -Designed and implemented a user-friendly interface that simplifies ingredient input and recipe selection using Python
+                    -Integrated machine learning and AI algorithms to analyze user-provided ingredients and generate relevant recipe
+                    suggestions while managing memory efficiency</p>
+                <a href="#">https://github.com/sbergcoding/quack_hacks_2025_2.0</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Connect</h2>
+            <p>Check out my work or connect with me professionally:</p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/luis-daniel-hernandez-moreno/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/LuisDHernandezM" target="_blank">GitHub</a>
+                <a href="luisdh@uoregon.edu">Email Me</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Luis D. Hernandez. Built for CS Assignment.</p>
+    </footer>
+
+</body>
+</html>
